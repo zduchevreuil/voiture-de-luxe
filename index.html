@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="img/pngwing.com.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,400;1,900&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> B M W </title>
+</head>
+<body>
+
+    <section>
+        <div class="cercle"></div>
+        <header>
+            <a href="#">
+                <img src="img/pngwing.com.png"class="logo">
+            </a>
+        </header>
+        <div class="conteneur">
+            <div class="text">
+                <h2>
+                    spor ve zengin arabalarda uzmanı</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, aspernatur! Sit autem culpa neque id. Modi reprehenderit sequi autem architecto perferendis dignissimos optio provident enim, debitis, amet obcaecati laudantium cupiditate.</p>
+                <a href="achat.html">Şimdi al</a>
+                <p class="tl">524.315 TL</p>
+            </div>
+            <div class="imgBox">
+                <img src="img/pngegg.png" class="bmw">
+            </div>
+        </div>
+        <ul class="catalogue">
+            <li><img src="img/pngegg (1).png" onclick = "imgSlider('img/pngegg (1).png');changecouleurCercle('blue')"/></li>
+            <li><img src="img/pngegg.png" onclick = "imgSlider('img/pngegg.png');changecouleurCercle('#fff')"/></li>
+            <li><img src="img/kisspng-car-bmw-i8-clip-art-bmw-car-5a755b9638aa61.1636420515176405982321.png" onclick = "imgSlider('img/kisspng-car-bmw-i8-clip-art-bmw-car-5a755b9638aa61.1636420515176405982321.png');changecouleurCercle('red')"/></li>
+            <li><img src="img/pngegg (2).png" onclick="imgSlider('img/pngegg (2).png');changecouleurCercle('yellow')"></li>
+        </ul>
+        <ul class="reseau">
+            <li><a href=""><img src="img/fesse de bouc.png" alt=""></a></li>
+            <li><a href=""><img src="img/twitter-icon-circle-blue-logo-0902F48837-seeklogo.com.png" alt=""></a></li>
+            <li><a href=""><img src="img/youtube-icon-logo-05A29977FC-seeklogo.com.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.bmw').src = anything
+        } 
+
+        function changecouleurCercle(color){
+            const cercle = document.querySelector('.cercle')
+            cercle.style.background = color;
+        }
+    </script>
+    
+</body>
+</html>
